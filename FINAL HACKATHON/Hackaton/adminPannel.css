@@ -1,0 +1,71 @@
+/* admin.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.admin_main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+.heading {
+    font-size: 24px;
+    text-align: center;
+    color: #007BFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+input.input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+#updateDoc {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#input1{
+     color: black;
+    background-image: linear-gradient(yellow,pink);
+    
+}
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

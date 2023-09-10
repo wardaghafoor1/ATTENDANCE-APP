@@ -1,0 +1,33 @@
+/* Updated styles for input groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-weight: bold;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + label:before {
+    font-family: 'Font Awesome 6 Free';
+    content: "\f046";
+    margin-right: 5px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.checkbox:checked + label:before {
+    content: "\f058";
+    color: #ff0040;
+}

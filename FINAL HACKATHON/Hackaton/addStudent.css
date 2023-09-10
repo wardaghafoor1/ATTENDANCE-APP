@@ -1,0 +1,126 @@
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp9549965.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333; /* Default text color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styles */
+.signUp_heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark Grey */
+}
+
+/* Form input styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Add placeholder inside the input */
+.input::placeholder {
+    color: #aaa; /* Light Grey placeholder text */
+}
+
+/* Form input hover styles */
+.input:hover {
+    border-color: #007bff; /* Blue border on hover */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Light blue shadow on hover */
+}
+
+/* Button styles */
+.add_btn {
+    display: block;
+    width: 100%;
+    background-color: #ff0040; /* Red */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover styles */
+.add_btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    /* Adjust font size for headings on smaller screens */
+    .signUp_heading {
+        font-size: 20px;
+    }
+
+    .input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .add_btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive styles for even smaller screens */
+@media (max-width: 576px) {
+    /* Further adjustments for smaller screens */
+    .signUp_heading {
+        font-size: 18px;
+    }
+
+    .input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .add_btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

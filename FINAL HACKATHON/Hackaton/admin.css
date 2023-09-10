@@ -1,0 +1,63 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply background image */
+body {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Center the dashboard_container */
+.dashboard_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(251, 255, 0),rgb(192, 26, 112),pink);
+}
+
+/* Style the buttons with 360-degree rotation animation */
+.btns {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    animation: rotate 5s linear infinite; /* 360-degree rotation animation */
+}
+
+.btns:hover {
+    background-color: #060306;
+    transform: scale(2);
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Define styles for smaller screens */
+    .dashboard_container {
+        padding: 20px;
+    }
+    
+    .btns {
+        width: 100%;
+    }
+}
+
+/* Define the 360-degree rotation animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
